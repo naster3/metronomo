@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/metro.css" />
+    <title>metronome</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="metronomo">
+        <div class="bpm-display">
+          <span class="tempo">140</span>
+          <span class="bpm">BPM</span>
+        </div>
+        <div class="tempo-text">super rapido</div>
+        <div class="tempo-settings">
+          <div class="adjust-tempo decrease-tempo">-</div>
+          <input
+            type="range"
+            min="20"
+            max="280"
+            step="1"
+            class="slider"
+            title="boton"
+          />
+          <div class="adjust-tempo increment-tempo">+</div>
+        </div>
+        <div class="start-stop">START</div>
+        <div class="measures">
+          <div class="subtract-beats stepper">-</div>
+          <div class="measures-count">4</div>
+          <div class="add-beats stepper">+</div>
+        </div>
+        <span class="beats-per-measures-text">beats por minuto</span>
+      </div>
+    </div>
+
+    <script src="../js/metro.js" type="module"></script>
+  </body>
+</html>
